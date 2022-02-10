@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  font-family: arial;
+}
+.background {
+  background-color: rgba(211, 211, 211, 0.426);
+  min-height: 100vh;
+  height: auto;
+}
+.botao-menu-pg {
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+.cabecalho {
+  position: absolute;
+  left: -100vw;
+  transition: 100ms;
+
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 450px;
+  height: 100vh;
+
+  background-color: gray;
+  cursor: pointer;
+}
+.cabecalho--ativo {
+  left: 50%;
+  transform: translate(-50%);
+}
+.esconder {
+  display: none;
+}
+.cabecalho > *{
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+.select {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto 15px auto;
+  font-size: 1.25rem;
+}
+.titulo {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+.descricao {
+  font-size: 1.3rem;
+  height: 50%;
+}
+.botao-enviar {
+  font-size: 1.3rem;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.botao-menu {
+  width: 25px;
+  color: white;
+  margin: 10px auto;
+}
+
+
+.agenda {
+  display: grid;
+  grid-template-columns: repeat(7, 14.2%);
+  text-align: center;
+}
+.agenda h2 {
+  padding: 10px 0;
+}
+.nota {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.botoes {
+  text-align: center;
+}
+.botao {
+  font-size: 1.25rem;
+  padding: 5px 9px;
+  margin-bottom: 10px;
+}
+
+.white, .green, .yellow, .red {
+  max-width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.white {
+  background-color: white;
+}
+.green { 
+  background-color: lightgreen;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.364);
+}
+
+.card-titulo {
+  font-size: 1.5rem;
+}
+
+.card-titulo, .card-paragrafo {
+  display: block;
+  word-wrap: break-word;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.botao-remover {
+  border: none;
+}
